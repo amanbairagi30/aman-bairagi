@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family: "apple-bold";
+        src: url("../fonts/SFUIDisplay-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "apple-medium";
+        src: url("../fonts/SFUIDisplay-Medium.otf");
+    }
+
+    @font-face {
+        font-family: "apple-regular";
+        src: url(../fonts/SFUIDisplay-Regular.otf);
+    }
+
+    @font-face {
+        font-family: "apple-BoldItalic";
+        src: url(../fonts/SFUIText-BoldItalicG1.otf);
+    }
+    @font-face {
+        font-family: "apple-Italic";
+        src: url(../fonts/SFUIText-Italic.otf);
+    }
+    @font-face {
+        font-family: "apple-SemiItalic";
+        src: url(../fonts/SFUIText-SemiboldItalic.otf);
+    }
+
+}
+
+/* body{
+    background-color: green;
+} */
+
+.navbar{
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.burger{
+    background: url(../assets/bgWhite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.navbar-active {
+    /* From https://css.glass */
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+#home{
+    position: relative;
+    /* background: url('../assets/bgIMG.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.setting{
+    /* border: 1px solid red; */
+    transition: all 1s ease-in;
+    animation: rotate 2s ease 0s infinite ;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
