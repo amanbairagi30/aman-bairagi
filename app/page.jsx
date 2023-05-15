@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import MainApp from './MainApp'
+import SupremeApp from './SupremeApp'
 
 
 export default function Home() {
   return (
     <>
-      <MainApp />
+      <SupremeApp />
     </>
   )
 }

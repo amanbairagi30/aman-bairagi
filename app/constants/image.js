@@ -31,9 +31,17 @@ import PhotoShop from "../../assets/photoshop.png"
 import bootstrap from "../../assets/bootstrap.png"
 import express from "../../assets/express.png"
 import npm from "../../assets/npm.png"
+import docs from "../../assets/docs.png"
+import codepen from "../../assets/codepen.png"
+import flixify from "../../assets/flixify.png"
+import cart from "../../assets/cart.png"
 
 export default {
   Logo,
+  docs,
+  cart,
+  flixify,
+  codepen,
   Illustrator,
   Aman,
   Canva,

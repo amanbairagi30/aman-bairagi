@@ -2,8 +2,10 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { images } from "../constants/index"
-import { HiMenuAlt3, HiX , HiOutlineFolderDownload } from "react-icons/hi"
+import { HiMenuAlt3, HiX, HiOutlineFolderDownload } from "react-icons/hi"
 import { motion } from 'framer-motion'
+// import Link from 'next/link'
+import { Link } from "react-scroll/modules"
 
 
 const Navbar = () => {
@@ -30,8 +32,10 @@ const Navbar = () => {
                     <Image className='bg-[#000] rounded-lg p-2 w-[4rem]' src={images.LogoS} alt='logo' />
                 </div>
                 <ul className='hidden md:flex md:flex-1 md:justify-center md:items-center'>
-                    {["Home", "About", "Projects", "Contact"].map((item) => (
-                        <li className='md:mx-2' key={item}>{item}</li>
+                    {["Home", "About", "Skills", "Projects","Contact"].map((item) => (
+                        <li className='md:mx-2 cursor-pointer' key={item}>
+                            <Link to={`${item}`} smooth={true} spy={true} offset={50} duration={500} >{item}</Link>
+                        </li>
                     ))}
                 </ul>
                 {/* <div className='border-none'>
@@ -40,7 +44,7 @@ const Navbar = () => {
 
                 <div className='hidden md:w-[10%] md:h-[3rem] md:flex md:items-center md:justify-center'>
                     <button className='w-[100%] py-2  rounded-md transition-all hover:bg-gray-700 bg-black text-white flex items-center justify-center gap-2'>
-                        <span>Resume</span>
+                        <span>CV</span>
                         <HiOutlineFolderDownload className='text-xl' />
                     </button>
                 </div>
@@ -55,8 +59,10 @@ const Navbar = () => {
                             <HiX className='border w-[35px] h-[35px] my-[1rem] rounded-[50%] p-1 hover:bg-gray-200 hover:cursor-pointer' onClick={() => setToggle(false)} />
                             <ul className=' list-none h-[100%] w-[100%] flex justify-start flex-col'>
 
-                                {["Home", "About", "Projects", "Contact"].map((item) => (
-                                    <li className={`text-black list-none my-[1.5rem] hover:cursor-pointer`} key={item} onClick={() => setToggle(false)}>{item}</li>
+                                {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
+                                    <li className={`text-black list-none my-[1.5rem] hover:cursor-pointer`} key={item} onClick={() => setToggle(false)}>
+                                        <Link to={`${item}`} smooth={true} spy={true} offset={50} duration={500} >{item}</Link>
+                                    </li>
                                 ))}
                             </ul>
                         </motion.div>

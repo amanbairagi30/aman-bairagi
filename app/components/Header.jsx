@@ -4,7 +4,8 @@ import { motion } from "framer-motion"
 import Image from 'next/image'
 import { images } from '../constants'
 import { FaHandPeace } from "react-icons/fa"
-import {HiOutlineFolderDownload} from "react-icons/hi"
+import { HiOutlineFolderDownload } from "react-icons/hi"
+import Link from 'next/link'
 
 const scaleVariants = {
     whileInView: {
@@ -22,8 +23,8 @@ const Header = () => {
 
     return (
         <>
-            <div className='flex flex-1 flex-col  md:px-[2rem] px-[1rem] w-[100%] md:h-[100vh] h-[100%] py-[6rem] pb-0 bg-gray-100 '>
-                <div className="border flex-1 md:flex-row flex-col border-red-800 m-auto pb-0 md:w-[80%] w-[100%] font-appleMedium px-[3rem] flex items-center justify-start text-left">
+            <div className='flex flex-1 flex-col  md:px-[2rem] px-[1rem] w-[100%] md:h-[100vh] h-[100%] py-[6rem] pb-0 bg-gray-100 ' id="Home">
+                <div className=" flex-1 md:flex-row flex-col border-red-800 m-auto pb-0 md:w-[80%] w-[100%] font-appleMedium px-[2rem] flex items-center justify-start text-left">
                     <motion.div
                         whileInView={{ x: [10, 0], opacity: [0, 1] }}
                         transition={{ duration: 1 }}
@@ -34,7 +35,7 @@ const Header = () => {
                                 <FaHandPeace className='text-3xl text-yellow-400' />
                                 <div className='flex items-center justify-start flex-col'>
                                     <p className='font-appleRegular mb-0 text-xl'>Hello, This is</p>
-                                    <h1 className='font-appleBold p-0 text-[6rem] md:text-[4rem] leading-none text-center '>Aman <span className=''>Kumar Bairagi</span></h1>
+                                    <h1 className='font-appleBold p-0 text-[4rem] md:text-[4rem] leading-none text-center '>Aman <span className=''>Kumar Bairagi</span></h1>
                                 </div>
                             </div>
                         </div>
@@ -55,20 +56,20 @@ const Header = () => {
                             transition={{ duration: 1, ease: "easeInOut" }}
                             src={images.circle}
                             alt="back-circle"
-                            // className='flex justify-between'
+                        // className='flex justify-between'
                         >
                             <Image src={images.circle} />
 
                         </motion.div>
                     </motion.div>
 
-                    <div className=' w-[80%] h-[3rem] my-3 flex items-center justify-center md:hidden'>
-                        <button className='w-[40%] py-2 mx-2 rounded-md transition-all hover:bg-gray-700 bg-black text-white flex items-center justify-center gap-4'>
-                            <span>Resume</span>
+                    <div className=' md:w-[80%] w-[95%] border h-[3rem] my-3 flex items-center justify-center md:hidden'>
+                        <button className='w-fit py-2 px-4 md:mx-2 mx-1  rounded-md transition-all hover:bg-gray-700 bg-black text-white flex items-center justify-center gap-4'>
+                            <span>CV</span>
                             <HiOutlineFolderDownload className='text-2xl' />
                         </button>
-                        <button className='w-[40%] py-2 rounded-md border-2 transition-all hover:bg-gray-200 border-black mx-2'>
-                            <span>E-Mail</span>
+                        <button className='w-fit py-2 px-4 rounded-md border-2 transition-all hover:bg-gray-200 border-black mx-2'>
+                            <Link href={"mailto:amanbairagi1089@gmail.com"}>E-Mail</Link>
                         </button>
                     </div>
 

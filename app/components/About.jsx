@@ -14,8 +14,8 @@ const about = {
 const About = () => {
     return (
         <>
-            <section className='flex flex-1 flex-col my-[2rem]  px-[1rem] md:px-[2rem] pb-0'>
-                <div className='m-auto border border-red-800  md:w-[80%] w-[100%] font-appleMedium px-[4rem] py-[3rem] flex flex-col items-center  text-left'>
+            <section className='flex flex-1 flex-col my-[2rem]  px-[1rem] md:px-[2rem] pb-0' id="About">
+                <div className='m-auto  border-red-800  md:w-[80%] w-[100%] font-appleMedium px-[2rem] py-[3rem] flex flex-col items-center  text-left'>
                     <div>
                         <motion.div
                             whileInView={{ y: [30, 0], opacity: [0, 1] }}
