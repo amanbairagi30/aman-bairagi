@@ -32,7 +32,7 @@ const About = () => {
 
                     </div>
                     <div>
-                        <p className='mt-8 font-appleBoldItalic md:text-[2rem] text-center text-base '>"You can't connect the dots looking forward you can only connect them looking backwards" <span className='font-appleBold text-base'> - Steve Jobs</span></p>
+                        <p className='mt-8 font-appleBoldItalic md:text-[2rem] text-center text-base '>You can not connect the dots looking forward you can only connect them looking backwards <span className='font-appleBold text-base'> - Steve Jobs</span></p>
                     </div>
                 </div>
             </section>

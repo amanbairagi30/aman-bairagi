@@ -63,8 +63,8 @@ const Contact = () => {
               whileInView={{ y: [30, 0], opacity: [0, 1] }}
               transition={{ duration: 1 }}
             >
-              <h1 className='font-appleBold text-[2rem]'>Let's Collaborate and Discuss your project 🚀</h1>
-              <p>Let's create something amazing together !</p>
+              <h1 className='font-appleBold text-[2rem]'>Let&apos;s Collaborate and Discuss your project 🚀</h1>
+              <p>Let&apos;s create something amazing together !</p>
               <div className='flex gap-[40px] py-2'>
                 <Link href={"https://www.linkedin.com/in/aman-kumar-bairagi-9315b3242/"} target='_blank'><AiFillLinkedin className='text-[2rem] hover:cursor-pointer' /></Link>
                 <Link href={"https://github.com/amanbairagi30"} target='_blank'><AiFillGithub className='text-[2rem] hover:cursor-pointer' /></Link>

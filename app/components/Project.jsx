@@ -29,7 +29,7 @@ const Project = () => {
 
                             if (category === "Featured") {
                                 return (
-                                    <div className='bg-[#303030] text-white md:col-span-2 mt-8 transition-all hover:cursor-pointer hover:rounded-lg hover:scale-105 hover:shadow-2xl col-span-1 border border-black rounded-lg flex flex-wrap items-center p-6 justify-between gap-[20px]'>
+                                    <div key={""} className='bg-[#303030] text-white md:col-span-2 mt-8 transition-all hover:cursor-pointer hover:rounded-lg hover:scale-105 hover:shadow-2xl col-span-1 border border-black rounded-lg flex flex-wrap items-center p-6 justify-between gap-[20px]'>
                                         <div className='border p-2 text-center rounded-b-lg w-[100%] text-white'>
                                             <span>{category}</span>
                                         </div>

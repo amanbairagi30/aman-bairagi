@@ -41,7 +41,7 @@ const Header = () => {
                         </div>
                         <div className='mb-4 text-center md:w-[80%]'>
                             <h1 className='font-appleBold text-xl text-center my-2 mb-4'>Web Developer</h1>
-                            <p className='font-appleRegular'><span className='bg-black text-white p-1 px-2 rounded-md'>Explore</span> my portfolio and let's <span className='bg-black text-white p-1 px-2 rounded-md'>collaborate</span> to elevate your online presence with custom web development that is both <span className='bg-black text-white p-1 px-2 rounded-md'>beautiful</span> and functional .</p>
+                            <p className='font-appleRegular'><span className='bg-black text-white p-1 px-2 rounded-md'>Explore</span> my portfolio and let&apos;s <span className='bg-black text-white p-1 px-2 rounded-md'>collaborate</span> to elevate your online presence with custom web development that is both <span className='bg-black text-white p-1 px-2 rounded-md'>beautiful</span> and functional .</p>
                         </div>
                     </motion.div>
 
@@ -50,7 +50,7 @@ const Header = () => {
                         transition={{ duration: 0.5, delayChildren: 0.5 }}
                         className='flex items-center justify-center  md:w-[55rem] relative pb-4'
                     >
-                        <Image src={images.Aman} className='absolute md:w-[30rem] z-[1] w-[40rem] pb-2 mt-4' />
+                        <Image src={images.Aman} className='absolute md:w-[30rem] z-[1] w-[40rem] pb-2 mt-4' alt='aman image' />
                         <motion.div
                             whileInView={{ scale: [0, 1] }}
                             transition={{ duration: 1, ease: "easeInOut" }}
@@ -58,7 +58,7 @@ const Header = () => {
                             alt="back-circle"
                         // className='flex justify-between'
                         >
-                            <Image src={images.circle} />
+                            <Image src={images.circle} alt='circle image' />
 
                         </motion.div>
                     </motion.div>

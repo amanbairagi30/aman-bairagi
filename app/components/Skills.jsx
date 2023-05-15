@@ -40,7 +40,7 @@ const Skills = () => {
 
           <div className='flex flex-wrap py-2 w-[100%]'>
             {['All', 'Development', 'Design', 'Language', 'Version Control', 'Database'].map((item, index) => (
-              <div className={`${click === index ? `bg-black text-white border-2 border-black` : `border-2 border-black`} mx-2 my-1 px-2 py-1 hover:cursor-pointer`} onClick={() => filterItem(item, index)}>
+              <div key={item} className={`${click === index ? `bg-black text-white border-2 border-black` : `border-2 border-black`} mx-2 my-1 px-2 py-1 hover:cursor-pointer`} onClick={() => filterItem(item, index)}>
                 {/* {item === 'All' ? setCollection(Skill) :"" } */}
                 {item}
               </div>
@@ -58,7 +58,7 @@ const Skills = () => {
                     whileInView={{ y: [30, 0], opacity: [0, 1] }}
                     transition={{ duration: 1 }}
                     className='border flex place-items-center flex-col p-2 h-[40] my-2 mx-2 '>
-                    <Image className='w-[80%] text-center' loading='lazy' src={image} />
+                    <Image className='w-[80%] text-center' loading='lazy' src={image} alt='images' />
                     <p className='text-center border p-2 w-[100%] transition-all hover:bg-black hover:cursor-pointer  hover:text-white rounded-t-md'>{name}</p>
                   </motion.div>
                 </>

@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='flex md:flex-row flex-warp  flex-col  justify-between items-center w-[100%]'>
                     {/* <AiOutlineHeart /> */}
                     <div className='flex md:border-none border flex-col  w-full  p-4 gap-[1rem] md:w-fit'> 
-                        <Image src={images.LogoS} width={40} />
+                        <Image src={images.LogoS} width={40} alt='logo' />
                         <p className='w-[66%]'>Designed and Developed by Aman</p>
                     </div>
 
