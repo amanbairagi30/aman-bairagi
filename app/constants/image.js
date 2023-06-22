@@ -1,6 +1,7 @@
 import Logo from "../../assets/abLogo.png"
 import LogoS from "../../assets/abLogo.svg"
-import Aman from "../../assets/aman-profle.png"
+// import Aman from "../../assets/aman-profle.png"
+import Aman from "../../assets/aman_pic_yellow.png"
 import Mongo from "../../assets/mongo.png"
 import email from '../../assets/email.png';
 import mobile from '../../assets/mobile.png';
@@ -35,9 +36,11 @@ import docs from "../../assets/docs.png"
 import codepen from "../../assets/codepen.png"
 import flixify from "../../assets/flixify.png"
 import cart from "../../assets/cart.png"
+import ecomm from "../../assets/ecomm.png"
 
 export default {
   Logo,
+  ecomm,
   docs,
   cart,
   flixify,

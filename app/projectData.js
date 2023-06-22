@@ -2,10 +2,19 @@ const { images } = require("./constants");
 
 export const ProjectData = [
     {
+        name : "Ecommerce Web App",
+        desc : " Full-stack implementation enabling users to browse, search, and list products securely",
+        pic : images.ecomm,
+        category : "Featured",
+        tech : "React JS , Tailwind CSS , ",
+        live : "https://ecomm-react-new.onrender.com/",
+        github_link : "https://github.com/amanbairagi30/ecomm-react"
+    },
+    {
         name : "Google Docs Clone",
         desc : "A  free web-based word processor in which documents can be created, edited and stored",
         pic : images.docs,
-        category : "Featured",
+        category : "normal",
         tech : "NextJs 13.3 , Tailwind CSS , Quill Editor",
         live : "https://google-docs-clone-pgzp.vercel.app/",
         github_link : "https://github.com/amanbairagi30/Google-Docs-Clone"
@@ -15,7 +24,7 @@ export const ProjectData = [
         desc : "A Online code-editor for web development tasks",
         pic : images.codepen,
         category : "normal",
-        tech : "React JS ,  , CodeMirror code Editor",
+        tech : "React JS , CodeMirror code Editor",
         live : "https://code-pen-react.netlify.app/",
         github_link :"https://github.com/amanbairagi30/CodePen-Clone"
     },

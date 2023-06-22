@@ -12,12 +12,12 @@ const Project = () => {
     return (
         <>
             <section className='flex flex-1 flex-col my-[2rem] px-[1rem] md:px-[2rem] pb-0' id="Projects">
-                <div className='m-auto  border-red-800  md:w-[80%] w-[100%] font-appleMedium px-[2rem] py-[3rem] flex flex-col items-center  text-left'>
+                <div className='m-auto  md:w-[80%] w-[100%] font-appleMedium px-[2rem] py-[3rem] flex flex-col items-center  text-left'>
                     {/* Heading of the Project Section */}
                     <motion.div
                         whileInView={{ y: [30, 0], opacity: [0, 1] }}
                       transition={{ duration: 1 }}  
-                        className='flex flex-wrap border justify-between items-center w-[100%]'
+                        className='flex flex-wrap justify-between items-center w-[100%]'
                     >
                         <h1 className='md:text-[4rem] text-[3rem] font-appleBold ' >Projects</h1>
                         {/* Icon */}

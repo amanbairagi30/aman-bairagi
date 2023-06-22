@@ -50,13 +50,13 @@ const Header = () => {
                         transition={{ duration: 0.5, delayChildren: 0.5 }}
                         className='flex items-center justify-center  md:w-[55rem] relative pb-4'
                     >
-                        <Image src={images.Aman} className='absolute md:w-[30rem] z-[1] w-[40rem] pb-2 mt-4' alt='aman image' />
+                        <Image src={images.Aman} className='absolute md:w-[25rem] z-[1] w-[23rem] pb-2 mt-4 rounded-full object-contain' alt='aman image' />
                         <motion.div
                             whileInView={{ scale: [0, 1] }}
                             transition={{ duration: 1, ease: "easeInOut" }}
                             src={images.circle}
                             alt="back-circle"
-                        // className='flex justify-between'
+                            className='opacity-50'
                         >
                             <Image src={images.circle} alt='circle image' />
 

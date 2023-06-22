@@ -2,10 +2,13 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { ColorRing } from 'react-loader-spinner'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 // {process.env.NEXT_PUBLIC_MONGO_URI}
 
 const Contact = () => {
+
+  const[loading ,setLoading] = useState(false)
 
   const [user, setUser] = useState({
     username: "",
@@ -26,8 +29,10 @@ const Contact = () => {
 
     e.preventDefault()
 
+    setLoading(true)
+
     try {
-      const response = await fetch("/api/contact  ", {
+      const response = await fetch("/api/contact ", {
         method: "POST",
         headers: { "Content_Type": "application/json" },
         body: JSON.stringify({
@@ -51,6 +56,8 @@ const Contact = () => {
     } catch (error) {
       console.log(error)
     }
+
+    setLoading(false)
   }
 
   return (
@@ -81,9 +88,23 @@ const Contact = () => {
 
                 {status === "success" && <p className='font-appleMedium text-green-600'>Thank you for Contacting us</p>}
                 {status === "error" && <p className='font-appleMedium text-red-600'>There was error while submitting the form</p>}
-                
-                <div className='font-appleBold  text-center my-4 transition-all hover:rounded-lg bg-black text-white hover:bg-[#313131] hover:cursor-pointer'>
-                  <button className=' p-4 w-full h-full'>Send Message</button>
+
+                <div className='font-appleBold flex items-center justify-center  text-center my-4 transition-all hover:rounded-lg bg-black text-white hover:bg-[#313131] hover:cursor-pointer'>
+                  {!loading ?
+                    <button className=' p-4 w-full h-full'>Send Message</button>
+                  :
+                  <ColorRing
+                    visible={true}
+                    height="60"
+                    width="60"
+                    // ariaLabel="blocks-loading"
+                    wrapperStyle={{}}
+                    // wrapperClass="blocks-wrapper"
+                    // colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+                    colors={['#ffff', "#ffff", "#ffff", "#ffff", "#fff"]}
+                  />
+                  }
+
                 </div>
               </form>
             </div>
