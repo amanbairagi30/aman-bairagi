@@ -2,11 +2,20 @@ const { images } = require("./constants");
 
 export const ProjectData = [
     {
+        name : "Consistency Maintainer",
+        desc : "Tracks attendance, manages tasks, and visualizes progress with a heatmap feature. Stay motivated and achieve success with this ultimate tool.",
+        pic : images.consistency,
+        category : "Featured",
+        tech : "React JS , Tailwind CSS , MongoDB , Express JS",
+        live : "https://consistency-maintainer-client.vercel.app/",
+        github_link : "https://github.com/amanbairagi30/consistency-maintainer-client"
+    },
+    {
         name : "Ecommerce Web App",
         desc : " Full-stack implementation enabling users to browse, search, and list products securely",
         pic : images.ecomm,
         category : "Featured",
-        tech : "React JS , Tailwind CSS , ",
+        tech : "React JS , Tailwind CSS , MongoDB , Express JS ",
         live : "https://ecomm-react-new.onrender.com/",
         github_link : "https://github.com/amanbairagi30/ecomm-react"
     },

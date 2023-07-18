@@ -37,11 +37,13 @@ import codepen from "../../assets/codepen.png"
 import flixify from "../../assets/flixify.png"
 import cart from "../../assets/cart.png"
 import ecomm from "../../assets/ecomm.png"
+import consistency from "../../assets/consistency.png"
 
 export default {
   Logo,
   ecomm,
   docs,
+  consistency,
   cart,
   flixify,
   codepen,
